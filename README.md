@@ -19,7 +19,7 @@ EfficientNets also transfer well and achieve state-of-the-art accuracy on CIFAR-
 #### ***Preprocessing***
 Firstly, we change the size of images to 244 * 244. Then we change the matrix of the pixels of each image to an array. Then, we change the dimension to 4 because the commands can only support this format. 
 #### ***Creating the Efficient Network***
-With the use of command 'EfficientNetB0' from Keras, we create the network. We use two taken images (A coffe mug and a water bottle). After creating the network, we use 'predict' for both of these images to show the estimations and their probabilities for each of the images. We just print the first three estimations that have higher probablities. 
+With the use of command 'EfficientNetB0' from Keras, we create the network. We use two taken images (A coffee mug and a water bottle). After creating the network, we use 'predict' for both of these images to show the estimations and their probabilities for each of the images. We just print the first three estimations that have higher probablities. 
 
 ### A problem with Efficient Network
 If the input image isn't among the categories that the network can detect, then the output will not be valid. One simple solution to this problem is to consider a threshold for the estimations' probabilities. For example, a good threshold can be 0.15 or 15%. It means that if the probability value of the first estimation that has the highest probability is less than 0.15, then we should announce that the estimated output is not valid and it is not among the categories of this network. 
